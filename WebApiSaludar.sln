@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSaludar", "WebApiSaludar\WebApiSaludar.csproj", "{D98AA900-83E0-42D6-896F-9A673EFA04DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProyect", "TestProyect\TestProyect.csproj", "{B3B99B6A-1ED5-414E-A5B9-34895EBF0981}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D98AA900-83E0-42D6-896F-9A673EFA04DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98AA900-83E0-42D6-896F-9A673EFA04DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98AA900-83E0-42D6-896F-9A673EFA04DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98AA900-83E0-42D6-896F-9A673EFA04DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B99B6A-1ED5-414E-A5B9-34895EBF0981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B99B6A-1ED5-414E-A5B9-34895EBF0981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B99B6A-1ED5-414E-A5B9-34895EBF0981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B99B6A-1ED5-414E-A5B9-34895EBF0981}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0C3A55A-6E36-45DD-9866-B33AD1AF6C93}
+	EndGlobalSection
+EndGlobal
