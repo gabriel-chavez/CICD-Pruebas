@@ -1,7 +1,5 @@
-namespace WebApiSaludar
-{
-    public class WeatherForecast
-    {
+namespace WebApiSaludar {
+    public class WeatherForecast {
         public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }
