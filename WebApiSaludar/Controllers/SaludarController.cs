@@ -10,7 +10,6 @@ namespace WebApiSaludar.Controllers
         [HttpGet]
         public string Get()
         {
-
             return "Hola Mundo!";
         }
 
