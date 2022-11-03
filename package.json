@@ -1,7 +1,6 @@
 {
   "name": "webapisaludar",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +15,14 @@
   },
   "lint-staged": {
     "*.cs": "dotnet-format --include"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-chavez/CICD-Pruebas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabriel-chavez/CICD-Pruebas/issues"
+  },
+  "homepage": "https://github.com/gabriel-chavez/CICD-Pruebas#readme",
+  "description": ""
 }
