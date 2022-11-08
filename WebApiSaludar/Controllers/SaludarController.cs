@@ -1,17 +1,14 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApiSaludar.Controllers
-{
+namespace WebApiSaludar.Controllers {
     [Route("api/[controller]")]
     [ApiController]
-    public class SaludarController : ControllerBase
-    {
+    public class SaludarController : ControllerBase {
         [HttpGet]
-        public string Get()
-        {
+        public string Get() {
 
-            return "Hola Mundo!";
+            return "Hola Mundo!!";
 
         }
 
