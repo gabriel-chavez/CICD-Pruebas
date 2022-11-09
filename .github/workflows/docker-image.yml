@@ -23,6 +23,6 @@ jobs:
     - name: Build the Docker image
       run: docker build -f ./WebApiSaludar/Dockerfile -t gabrielchavezr/web-api-saludartest:$(date +%s) .
     - name: Docker Push
-      run: docker push gabrielchavezr/web-api-saludartest:latest
+      run: docker push gabrielchavezr/web-api-saludartest
     
 
