@@ -64,8 +64,8 @@ jobs:
               StrictHostKeyChecking no
           END
       - name: Stop the server
-        run: ssh staging 'cd /cicd/alsie-csharp/ && sudo docker-compose down'     
+        run: ssh staging 'cd /cicd/CICD-Pruebas/ && sudo docker-compose down'     
         
       - name: Start the server
         if: ${{ always() }}
-        run: ssh staging 'cd /cicd/alsie-csharp/ && sudo docker-compose up --build -d'
+        run: ssh staging 'cd /cicd/CICD-Pruebas/ && sudo docker-compose up --build -d'
