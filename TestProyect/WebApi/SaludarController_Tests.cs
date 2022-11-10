@@ -12,7 +12,7 @@ namespace TestProyect.WebApi
         [Fact]
         public void Get_Correctly()
         {
-            var resultadoEsperado = "Hola Mundo!";
+            var resultadoEsperado = "Hola Geovanna!";
             SaludarController saludarController = new SaludarController();
             var resultado = saludarController.Get();
             Assert.Equal(resultadoEsperado, resultado);
