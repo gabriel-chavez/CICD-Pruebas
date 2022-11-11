@@ -1,5 +1,5 @@
 #!/bin/sh
-PATH_REPO="/cicd/CICD-Pruebas"
+PATH_REPO="/ms/AeronaveNur"
 RAMA_REPO="master"
 
 cd $PATH_REPO
@@ -7,6 +7,6 @@ cd $PATH_REPO
 git checkout -b $RAMA_REPO
 git fetch
 git reset --hard HEAD
-git pull origin $RAMA_REPO
+git merge origin/$RAMA_REPO
 
-sudo docker-compose up --build -d
+docker-compose up --build -d
