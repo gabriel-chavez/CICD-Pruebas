@@ -38,14 +38,14 @@ jobs:
     - name: configure Docker
       run: |-
         gcloud --quiet auth configure-docker
-    - name: Get Credentials
+    - name: Get GKE Credentials
       run: |-
-        gcloud container clusters get-credentials "$CICD_CLUSTER" --zone "$CICD_ZONE"
+        gcloud container clusters get-credentials "$GKE_CLUSTER" --zone "$GKE_ZONE"
 
     - name: Build Docker Image
-      run: |-
+      run: |-        
         docker build --tag "gcr.io/$PROJECT_ID/$IMAGE:$TAG" -f ./WebApiSaludar/Dockerfile .
-    - name: Publish Docker image 
+    - name: Publish Docker Image to GCR
       run: |-
         docker push "gcr.io/$PROJECT_ID/$IMAGE:$TAG"
 
@@ -53,8 +53,8 @@ jobs:
       run: |-
         curl -sfLo kustomize https://github.com/kubernetes-sigs/kustomize/releases/download/v3.1.0/kustomize_3.1.0_linux_amd64
         chmod u+x ./kustomize
-    
-    - name: Deploy Image to cluster
+
+    - name: Deploy Image to GKE cluster
       run: |-
         ./kustomize edit set image gcr.io/PROJECT_ID/IMAGE:TAG=gcr.io/$PROJECT_ID/$IMAGE:$TAG
         ./kustomize build . | kubectl apply -f -
