@@ -6,9 +6,9 @@ on:
       - master
 env:
   PROJECT_ID: ${{secrets.CICD_PROJECT}}
-  CICD_CLUSTER: github-actios-cicd
+  CICD_CLUSTER: github-actions-cicd
   CICD_ZONE: us-central1-c
-  DEPLOYMENT_NAME: github-actios-cicd
+  DEPLOYMENT_NAME: github-actions-cicd
   IMAGE: github-actions-gke-image
   TAG: 1.0.0
 jobs:
