@@ -6,7 +6,7 @@ on:
       - master
 env:
   PROJECT_ID: ${{secrets.CICD_PROJECT}}
-  CICD_CLUSTER: github-actions-cicd	
+  CICD_CLUSTER: github-actions-cicd
   CICD_ZONE: us-central1-c
   DEPLOYMENT_NAME: github-actions-cicd-deployment
   IMAGE: github-actions-gke-image
