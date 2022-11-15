@@ -6,8 +6,8 @@ on:
       - master
 env:
   PROJECT_ID: ${{secrets.CICD_PROJECT}}
-  CICD_CLUSTER: github-actions-gke	
-  CICD_ZONE: us-central1-c
+  GKE_CLUSTER: github-actions-gke	
+  GKE_ZONE: us-central1-c
   DEPLOYMENT_NAME: github-actions-gke-deployment
   IMAGE: github-actions-gke-image
   TAG: 1.0.0
