@@ -6,9 +6,9 @@ on:
       - master
 env:
   PROJECT_ID: ${{secrets.CICD_PROJECT}}
-  CICD_CLUSTER: github-actions-cicd	
+  CICD_CLUSTER: github-actions-gke	
   CICD_ZONE: us-central1-c
-  DEPLOYMENT_NAME: github-actions-cicd-deployment
+  DEPLOYMENT_NAME: github-actions-gke-deployment
   IMAGE: github-actions-gke-image
   TAG: 1.0.0
 jobs:
@@ -60,5 +60,3 @@ jobs:
         ./kustomize build . | kubectl apply -f -
         kubectl rollout status deployment/$DEPLOYMENT_NAME
         kubectl get services -o wide
-
-
