@@ -1,0 +1,12 @@
+services:
+  web-api-test:
+    image: gabrielchavezr/web-api-saludartest:v1
+    build:
+      context: .
+      dockerfile: ./WebApiSaludar/Dockerfile
+    ports:
+      - "8989:80"
+      - "4939:443"
+   
+   
+ 
